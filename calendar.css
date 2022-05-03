@@ -1,0 +1,42 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  color: rgb(85, 85, 85);
+  --light-grey: #dadce0;
+  --red: #ff3c39;
+}
+
+#calendarContainer {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  height: 100%;
+  width: 90%;
+  min-height: 300px;
+}
+
+.day {
+  border-bottom: 1px solid var(--light-grey);
+  border-right: 1px solid var(--light-grey);
+  text-align: center;
+  padding-top: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 200ms, color 200ms;
+}
+
+#dayHeader {
+  background-color: var(--light-grey);
+  text-align: center;
+  padding-top: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 200ms, color 200ms;
+}
+.weekend {
+  color: var(--red);
+}
+.selected {
+  background-color: var(--red);
+  color: #fff;
+}
