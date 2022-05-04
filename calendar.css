@@ -62,4 +62,5 @@ body {
 .unavailable {
   background-color: var(--light-grey);
   cursor: default;
+  color: rgba(1, 1, 1, 0);
 }
